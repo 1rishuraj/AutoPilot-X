@@ -19,7 +19,7 @@ if(localStorage.getItem("bestBrain")){
         cars[i].brain=JSON.parse(
             localStorage.getItem("bestBrain"));
         if(i!=0){
-            NeuralNetwork.mutate(cars[i].brain,0.5);
+            NeuralNetwork.mutate(cars[i].brain,0.1);
 //    If you use a smaller mutation magnitude, such as 0.1, the 
 // mutations will be more subtle. This can be useful when you want 
 // to make small adjustments to the neural network's parameters while preserving the learned behavior to a greater extent. 
