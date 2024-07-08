@@ -10,7 +10,7 @@ const networkCtx=networkCanvas.getContext("2d");
 
 const road=new Road(carCanvas.width/2,carCanvas.width*0.90);
 // x coord=width/2 and width is 90% of canvas width
-const N=1;
+const N=100;
 const cars=generateCars(N);
 // const car=new Car(road.getLaneCenter(1),100,30,50,"AI");//AI control for this car
 let bestCar=cars[0];
